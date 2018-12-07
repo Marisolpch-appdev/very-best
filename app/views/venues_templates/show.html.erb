@@ -1,16 +1,23 @@
-<div class="page-header">
-  <h3>Venue #<%= @venue.id %></h3>
-</div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-<div class="row">
-  <div class="col-md-12 mb-2">
-    <dl class="dl-horizontal">
-      <dt>Name</dt>
-      <dd><%= @venue.name %></dd>
+<div class="container mt-4">
 
-      <dt>Address</dt>
-      <dd><%= @venue.address %></dd>
-      <dd>
+
+    <div class="row mt-2 justify-content-md-center">
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header">
+        <h4 class="card-title">
+          <dd><%= @venue.name %></dd>
+                      
+            <small class="text-muted">
+                <dd><%= @venue.address %></dd>
+            </small>
+        </h4>
+      </div>
+
+<div class="card-body">
         <div>
           <div id="location_map" style="height: 480px;">
           </div>
